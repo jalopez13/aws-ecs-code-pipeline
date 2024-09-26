@@ -2,6 +2,7 @@ FROM oven/bun AS base
 
 # Install dependencies only when needed
 FROM base AS deps
+
 WORKDIR /app
 COPY package.json bun.lockb ./
 RUN bun install --frozen-lockfile
