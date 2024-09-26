@@ -1,9 +1,14 @@
-export default function Home() {
+import { Character } from '@/components/character';
+
+const IndexPage = async () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl text-center font-bold">
-        AWS ECS ROCKS - Updated
-      </h1>
+    <div className="flex flex-col items-center justify-center h-screen space-y-6">
+      <p className="text-2xl font-semibold">
+        Generate Random Starwars Character
+      </p>
+      <Character />
     </div>
   );
-}
+};
+
+export default IndexPage;
