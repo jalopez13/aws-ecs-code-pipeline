@@ -37,4 +37,6 @@ AWS Setup Steps
 - Create a new Task Definition.
 - Create a new Service.
 
+![ecs](https://github.com/user-attachments/assets/f78f6ff0-c2c4-4d64-b2ed-96a0a752b19e)
+
 <img width="2495" alt="Screen Shot 2024-09-26 at 1 57 15 AM" src="https://github.com/user-attachments/assets/bb3df76b-ecb5-4193-8df6-f2abc3ad0d6a">
