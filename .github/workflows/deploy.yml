@@ -31,14 +31,14 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Build, tag, and push image to Amazon ECR
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: ecs-next-app
-          IMAGE_TAG: ${{ github.sha }}
+        # env:
+        #   ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        #   ECR_REPOSITORY: ecs-next-app
+        #   IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t ecs-next-app .
-          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker tag ecs-next-app:latest 397491111170.dkr.ecr.us-east-1.amazonaws.com/ecs-next-app:latest
+          docker push 397491111170.dkr.ecr.us-east-1.amazonaws.com/ecs-next-app:latest
 
       - name: Deploy to Amazon ECS
         run: |
