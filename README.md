@@ -2,7 +2,7 @@
 
 This application is a use case of how to containerize an application with docker and deploy via github actions to a AWS ECS Cluster with Load Balancer and  Auto Scaling enabled.
 
-#### Tech Stack:
+Tech Stack:
 
 - [Bun.com](https://bun.sh/)
 - [Nextjs.org](https://nextjs.org)
@@ -11,7 +11,7 @@ This application is a use case of how to containerize an application with docker
 
 
 
-###$ AWS Services
+AWS Services
 
 - [ECR](https://aws.amazon.com/ecr/)
 - [ECS](https://aws.amazon.com/ecs/)
