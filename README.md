@@ -19,7 +19,7 @@ AWS Services
 - [ECS](https://aws.amazon.com/ecs/)
 - [FARGATE](https://aws.amazon.com/fargate/)
 
-AWS Setup Steps
+
 
 Note: make sure you are authenticated via aws-cli by creating an IAM user with sufficient privileges.
 
@@ -27,6 +27,8 @@ This process will create a stack in CloudFormation. Once done make sure the Secu
 Also, do the same for the load balancer. Make sure the Listeners and Rules are edited to include a rule for port 3000.
 
 To view app visit. Load Balancer DNS url. 
+
+AWS Setup Steps
 
 - Dockerize your app and create an image.
 - Tag the image to be used for as an export to ECR.
