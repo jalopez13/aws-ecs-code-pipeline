@@ -39,10 +39,11 @@ jobs:
           aws ecr batch-delete-image --repository-name $ECR_REPOSITORY --image-ids imageTag=latest || true
 
       - name: Build, tag, and push image to Amazon ECR
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: ecs-next-app
-          IMAGE_TAG: ${{ github.sha }}
+        # FIXME: This step fails because of the environment variables
+        # env:
+        #   ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        #   ECR_REPOSITORY: ecs-next-app
+        #   IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
