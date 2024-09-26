@@ -1,6 +1,6 @@
 # AWS ECS Code Pipeline 
 
-This application is a use case of how to containerize an application with docker and deploy via github actions to a AWS ECS Cluster with Load Balancer and  Auto Scaling enabled.
+This application is a use case of how to containerize an application with docker and deploy via github actions to a AWS ECS Cluster with Load Balencer and  Auto Scaling enabled.
 
 Tech Stack:
 
