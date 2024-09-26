@@ -1,4 +1,6 @@
-# AWS ECS Code Pipeline [DEMO](54.175.105.36:3000)
+# AWS ECS Code Pipeline 
+
+[DEMO](54.175.105.36:3000)
 
 This application is a use case of how to containerize an application with docker and deploy via github actions to a AWS ECS Cluster with Load Balancer and  Auto Scaling enabled.
 
