@@ -21,7 +21,7 @@ AWS Services
 
 AWS Setup Steps
 
-Note: make sure you are authenticated via aws-cli by creating a user with sufficient privileges.
+Note: make sure you are authenticated via aws-cli by creating an IAM user with sufficient privileges.
 
 This process will create a stack in CloudFormation. Once done make sure the Security Group attached to Task has the correct Inbound Rules exposing port 3000. 
 Also, do the same for the load balancer. Make sure the Listeners and Rules are edited to include a rule for port 3000.
