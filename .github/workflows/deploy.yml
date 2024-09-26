@@ -42,7 +42,6 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: ecs-next-app
-          IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t ecs-next-app .
           docker tag ecs-next-app:latest 397491111170.dkr.ecr.us-east-1.amazonaws.com/ecs-next-app:latest
