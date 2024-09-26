@@ -3,7 +3,7 @@
 This application is a use case of how to containerize an application with docker and deploy via github actions to a AWS ECS Cluster with Load Balencer and  Auto Scaling enabled.
 
 [Test App](http://next-app-loadbalancer-1237673968.us-east-1.elb.amazonaws.com:3000)
-/
+
 Tech Stack:
 
 - [Bun.com](https://bun.sh/)
