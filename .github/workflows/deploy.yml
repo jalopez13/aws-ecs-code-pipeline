@@ -31,6 +31,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Build, tag, and push image to Amazon ECR
+        # FIXME: This step fails because of the environment variables
         # env:
         #   ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         #   ECR_REPOSITORY: ecs-next-app
