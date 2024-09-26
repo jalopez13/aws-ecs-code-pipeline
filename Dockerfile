@@ -6,8 +6,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN bun install 
-RUN bun --bun  run build
+RUN bun install && bun run build --production
 
 COPY . .
 
